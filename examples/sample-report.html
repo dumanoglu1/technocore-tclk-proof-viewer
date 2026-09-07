@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technocore Contribution Proof - Technocore Proof Receipt</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --base: #0A1128;
+      --panel: #101A36;
+      --ink: #F5F7FA;
+      --muted: #A8B0BA;
+      --cyan: #00B4D8;
+      --line: #26324F;
+      --ok: #38D996;
+      --warn: #F6C756;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--base);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1120px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+    .chip {
+      width: 48px;
+      height: 48px;
+      background: var(--cyan);
+      clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 56px);
+      line-height: 1;
+      margin: 0;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 14px 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      min-width: 0;
+    }
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .value {
+      overflow-wrap: anywhere;
+      font-size: 14px;
+    }
+    .status {
+      color: var(--ok);
+      font-weight: 700;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: block;
+    }
+    thead, tbody, tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    tr:last-child td { border-bottom: 0; }
+    pre {
+      overflow: auto;
+      background: #060B1B;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--ink);
+    }
+    a { color: var(--cyan); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="chip" aria-hidden="true"></div>
+      <h1>Technocore Contribution Proof</h1>
+      <p class="subtitle">A signed DID receipt for a public artifact revision.</p>
+    </header>
+    <section class="grid">
+      <article class="card"><div class="label">Schema</div><div class="value">technocore-contribution-proof-v1</div></article>
+      <article class="card"><div class="label">Artifact</div><div class="value"><a href="https://github.com/dumanoglu1/technocore-tclk-proof-viewer">https://github.com/dumanoglu1/technocore-tclk-proof-viewer</a></div></article>
+      <article class="card"><div class="label">Commit</div><div class="value">0123456789abcdef0123456789abcdef01234567</div></article>
+      <article class="card"><div class="label">DID</div><div class="value">did:key:z6MkExampleTechnocoreReceiptOnly</div></article>
+      <article class="card"><div class="label">Signature</div><div class="value">sample-signature</div></article>
+    </section>
+    
+    <section>
+      <h2>Raw Proof</h2>
+      <pre>{
+  &quot;artifact_url&quot;: &quot;https://github.com/dumanoglu1/technocore-tclk-proof-viewer&quot;,
+  &quot;commit&quot;: &quot;0123456789abcdef0123456789abcdef01234567&quot;,
+  &quot;did&quot;: &quot;did:key:z6MkExampleTechnocoreReceiptOnly&quot;,
+  &quot;schema&quot;: &quot;technocore-contribution-proof-v1&quot;,
+  &quot;signature&quot;: &quot;sample-signature&quot;
+}</pre>
+    </section>
+    <footer class="subtitle">Rendered offline from contribution-proof.sample.json. This receipt does not verify signatures by itself; it preserves the proof material for human review.</footer>
+  </main>
+</body>
+</html>

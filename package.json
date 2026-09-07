@@ -1,0 +1,28 @@
+{
+  "name": "technocore-tclk-proof-viewer",
+  "version": "0.1.0",
+  "description": "Offline HTML receipt renderer for Technocore contribution and TCLK proof JSON files.",
+  "type": "module",
+  "bin": {
+    "tclk-proof-viewer": "./bin/tclk-proof-viewer.mjs"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "technocore",
+    "tclk",
+    "proof",
+    "receipt",
+    "flop"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dumanoglu1/technocore-tclk-proof-viewer.git"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

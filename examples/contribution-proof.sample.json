@@ -1,0 +1,8 @@
+{
+  "artifact_url": "https://github.com/dumanoglu1/technocore-tclk-proof-viewer",
+  "commit": "0123456789abcdef0123456789abcdef01234567",
+  "did": "did:key:z6MkExampleTechnocoreReceiptOnly",
+  "schema": "technocore-contribution-proof-v1",
+  "signature": "sample-signature"
+}
+
